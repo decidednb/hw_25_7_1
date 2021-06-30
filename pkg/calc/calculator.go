@@ -35,5 +35,5 @@ func (c *calculator) addition(firstNum, secondNum float64) float64 {
 }
 
 func (c *calculator) subtraction(firstNum, secondNum float64) float64 {
-	return firstNum + secondNum
+	return firstNum - secondNum
 }
