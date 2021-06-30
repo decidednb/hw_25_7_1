@@ -16,6 +16,8 @@ func (c *calculator) Calculate(firstNum, secondNum float64, operator string) flo
 		return c.subtraction(firstNum, secondNum)
 	case operator == "+":
 		return c.addition(firstNum, secondNum)
+	case operator == "*":
+		return c.multiplication(firstNum, secondNum)
 	default:
 		fmt.Println("Введен неизвестный арифметический оператор: ", operator)
 		return 0
@@ -36,4 +38,8 @@ func (c *calculator) addition(firstNum, secondNum float64) float64 {
 
 func (c *calculator) subtraction(firstNum, secondNum float64) float64 {
 	return firstNum + secondNum
+}
+
+func (c *calculator) multiplication(firstNum, secondNum float64) float64 {
+	return firstNum * secondNum
 }
